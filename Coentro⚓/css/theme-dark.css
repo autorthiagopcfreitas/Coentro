@@ -1,0 +1,76 @@
+:root {
+	--background1: rgb(30, 30, 30);
+	--background2: rgb(40, 40, 40);
+	--background3: rgb(50, 50, 50);
+	--background4: rgb(60, 60, 60);
+	--background5: rgb(70, 70, 70);
+	--background6: rgb(80, 80, 80);
+
+	--text1: rgb(240, 240, 240);
+	--text2: rgb(230, 230, 230);
+	--text3: rgb(200, 200, 200);
+
+	--border1: rgb(200, 200, 200);
+
+	--sidebar-background: rgb(55, 55, 55);
+	--sidebar-text: rgb(240, 240, 240);
+	--sidebar-border: rgba(255, 255, 255, 0.12);
+}
+
+.libraryElemInfo, .libraryElemDelete, .librarySearchInputIcon, .librarySortIcon, .buttonIconImage, #infoBox img, .overlayButton img {
+	filter: invert(0.8);
+}
+
+#loadingAnimation:after {
+	border: 6px solid #fff;
+	border-color: #fff transparent #fff transparent;
+}
+
+/* Daily Trackers dark mode overrides */
+.readingControlsHolder,
+.readingStats,
+.heatmapContainer {
+	background: rgb(55, 55, 55) !important;
+	border: 1px solid rgba(255, 215, 0, 0.2) !important;
+}
+
+.readingControlsHolder *,
+.readingStats *,
+.heatmapContainer * {
+	color: #d4af37 !important;
+}
+
+.calendarCell,
+.readingWordRow,
+#readingStreakChart,
+.dayPeriodGraphic {
+	background: rgb(70, 70, 70) !important;
+	border-color: rgba(212, 175, 55, 0.35) !important;
+}
+
+.dayPeriodBar {
+	background: rgba(212, 175, 55, 0.2) !important;
+}
+
+.calendarCell.empty {
+	background: transparent !important;
+	border-color: rgba(212, 175, 55, 0.25) !important;
+}
+
+.libraryGridAuthor,
+.libraryGridProgress {
+	color: #d4af37 !important;
+	opacity: 1 !important;
+}
+
+.libraryGridTitle {
+	color: #d4af37 !important;
+	opacity: 1 !important;
+}
+
+.libraryGridTitle span,
+.libraryGridAuthor span,
+.libraryGridProgress span {
+	color: inherit !important;
+	opacity: 1 !important;
+}

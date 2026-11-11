@@ -1,0 +1,27 @@
+:root {
+	--background1: rgb(225, 225, 225);
+	--background2: rgb(205, 205, 215);
+	--background3: rgb(195, 195, 205);
+	--background4: rgb(185, 185, 195);
+	--background5: rgb(175, 175, 185);
+	--background6: rgb(165, 165, 175);
+
+	--text1: rgb(15, 15, 15);
+	--text2: rgb(25, 25, 25);
+	--text3: rgb(85, 85, 85);
+
+	--border1: rgb(55, 55, 55);
+
+	--sidebar-background: rgb(255, 255, 255);
+	--sidebar-text: rgb(30, 30, 30);
+	--sidebar-border: rgba(0, 0, 0, 0.15);
+}
+
+#loadingAnimation:after {
+	border: 6px solid black;
+	border-color: black transparent black transparent;
+}
+
+.navigationBarTitle span, .aboutTitle {
+	color: #83a;
+}

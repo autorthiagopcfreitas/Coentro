@@ -1,0 +1,58 @@
+%% Architecture diagram for "Leitor de epub Coentro" extension
+flowchart LR
+  %% Subgraphs
+  subgraph UI [Extension UI]
+    U["User / Browser"]
+    IDX["index.html"]
+    CSS["css/* (themes & main.css)"]
+  end
+
+  subgraph Core [Core JS Modules]
+    IDXJS["index.js"]
+    Interface["Interface.js"]
+    Epub["EpubReader.js"]
+    Loader["Loader.js"]
+    Renderer["Renderer.js"]
+    Store["Store.js"]
+    Input["InputManager.js"]
+    Gutenberg["Gutenberg.js"]
+    Util["Util.js"]
+    JSZip["jszip.min.js"]
+  end
+
+  subgraph Background [Background / Manifest]
+    BG["background.js"]
+    MAN["manifest.json"]
+  end
+
+  subgraph Assets [Static Assets]
+    IMGS["images/"]
+    ASSETS["assets/"]
+  end
+
+  %% Flows
+  U --> IDX
+  IDX --> IDXJS
+  IDX --> CSS
+
+  IDXJS --> Interface
+  Interface --> Epub
+  Epub --> Loader
+  Loader --> Renderer
+  Renderer --> Store
+  Store --> ASSETS
+
+  IDXJS --> Input
+  Input --> Epub
+  Epub --> Gutenberg
+  Renderer --> Util
+  Loader --> JSZip
+
+  MAN --> BG
+  BG --> Store
+
+  IMGS --- Interface
+
+  %% Notes
+  classDef info fill:#f9f,stroke:#333,stroke-width:1px;
+  class MAN,BG info

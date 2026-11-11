@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640">
+  <style>
+    .box { fill:#ffffff; stroke:#2b2b2b; stroke-width:1.5; rx:8; }
+    .title { font: 600 16px/1.2 'Segoe UI', Roboto, Arial; fill:#111; }
+    .item { font: 12px/1.2 'Segoe UI', Roboto, Arial; fill:#222; }
+    .arrow { stroke:#2b2b2b; stroke-width:1.4; fill:none; marker-end:url(#arrowhead); }
+    .muted { fill:#666; font:11px 'Segoe UI', Roboto, Arial; }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b2b2b" />
+    </marker>
+  </defs>
+
+  <!-- UI -->
+  <rect class="box" x="24" y="48" width="260" height="200" rx="10"/>
+  <text class="title" x="40" y="72">Extension UI</text>
+  <text class="item" x="40" y="96">index.html</text>
+  <text class="item" x="40" y="116">css/ (themes & main.css)</text>
+  <text class="muted" x="40" y="140">User / Browser</text>
+
+  <!-- Core -->
+  <rect class="box" x="320" y="24" width="440" height="320" rx="10"/>
+  <text class="title" x="340" y="48">Core JS Modules</text>
+  <text class="item" x="340" y="76">index.js</text>
+  <text class="item" x="340" y="96">Interface.js</text>
+  <text class="item" x="340" y="116">EpubReader.js</text>
+  <text class="item" x="340" y="136">Loader.js</text>
+  <text class="item" x="340" y="156">Renderer.js</text>
+  <text class="item" x="340" y="176">Store.js</text>
+  <text class="item" x="340" y="196">InputManager.js</text>
+  <text class="item" x="340" y="216">Gutenberg.js</text>
+  <text class="item" x="340" y="236">Util.js · jszip.min.js</text>
+
+  <!-- Background / Manifest -->
+  <rect class="box" x="788" y="24" width="340" height="120" rx="10"/>
+  <text class="title" x="804" y="48">Background / Manifest</text>
+  <text class="item" x="804" y="76">background.js</text>
+  <text class="item" x="804" y="96">manifest.json</text>
+
+  <!-- Assets -->
+  <rect class="box" x="788" y="176" width="340" height="128" rx="10"/>
+  <text class="title" x="804" y="200">Static Assets</text>
+  <text class="item" x="804" y="224">images/</text>
+  <text class="item" x="804" y="244">assets/</text>
+
+  <!-- Arrows (flows) -->
+  <path class="arrow" d="M284 148 L320 148" />
+  <path class="arrow" d="M460 344 L460 424 L820 424" />
+  <path class="arrow" d="M740 136 L788 136" />
+  <path class="arrow" d="M740 176 L788 240" />
+  <path class="arrow" d="M520 124 L520 176" />
+
+  <!-- Labels on arrows -->
+  <text class="muted" x="300" y="136">loads</text>
+  <text class="muted" x="540" y="312">renders → store</text>
+
+  <!-- Legend note -->
+  <text class="muted" x="24" y="272">This static SVG is an approximate layout of the Mermaid diagram; for the full source see</text>
+  <a href="assets/architecture.mmd"><text class="muted" x="24" y="290">assets/architecture.mmd</text></a>
+
+</svg>

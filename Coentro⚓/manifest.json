@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Leitor de epub Coentro",
+  "description": "Um leitor de EPUB gratuito e de código aberto prontinho para o Ler em voz alta do Edge.",
+  "icons": {
+    "256": "assets/logo.png"
+  },
+  "version": "1.4",
+  "permissions": [
+    "tabs",
+    "storage",
+    "unlimitedStorage",
+    "cookies",
+    "scripting",
+    "alarms"
+  ],
+  "host_permissions": [
+    "https://pt.z-lib.fm/*",
+    "https://translate.googleapis.com/*",
+    "https://www.googleapis.com/*",
+    "https://books.google.com/*",
+    "https://openlibrary.org/*",
+    "https://www.fictiondb.com/*",
+    "http://127.0.0.1/*",
+    "http://localhost/*",
+    "https://127.0.0.1/*",
+    "https://localhost/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Leitor de epub Coentro"
+  },
+  "background": {
+    "service_worker": "js/background.js"
+  }
+}

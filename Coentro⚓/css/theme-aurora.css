@@ -1,0 +1,27 @@
+:root {
+	--background1: linear-gradient(45deg, rgb(17, 0, 34), rgb(25, 0, 25));
+	--background2: linear-gradient(45deg, rgb(34, 0, 51), rgb(42, 0, 42));
+	--background3: linear-gradient(45deg, rgb(51, 17, 68), rgb(60, 17, 60));
+	--background4: linear-gradient(45deg, rgb(68, 34, 85), rgb(77, 34, 77));
+	--background5: linear-gradient(45deg, rgb(85, 51, 102), rgb(93, 0, 93));
+	--background6: linear-gradient(45deg, rgb(102, 68, 119), rgb(110, 68, 110));
+
+	--text1: rgb(240, 240, 240);
+	--text2: rgb(230, 230, 230);
+	--text3: rgb(200, 200, 200);
+
+	--border1: rgb(200, 200, 200);
+
+	--sidebar-background: rgb(55, 55, 55);
+	--sidebar-text: rgb(240, 240, 240);
+	--sidebar-border: rgba(255, 255, 255, 0.12);
+}
+
+.libraryElemInfo, .libraryElemDelete, .librarySearchInputIcon, .librarySortIcon, .buttonIconImage, #infoBox img, .overlayButton img {
+	filter: invert(0.8);
+}
+
+#loadingAnimation:after {
+	border: 6px solid #fff;
+	border-color: #fff transparent #fff transparent;
+}
